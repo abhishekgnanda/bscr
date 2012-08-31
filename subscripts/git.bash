@@ -1,10 +1,12 @@
+SDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # git specific
 alias s='git status'
 alias d='git diff'
 alias l='git log'
 alias cl='git clean -xfd'
 
-source $DIR/git-completion.bash
+source $SDIR/git-completion.bash
 
 get_git_branch() {
   local br=$(git branch 2> /dev/null | grep "*" | sed 's/* //g')
