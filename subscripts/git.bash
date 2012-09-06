@@ -4,6 +4,7 @@ SDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 alias s='git status'
 alias d='git diff'
 alias l='git log'
+alias n='git checkout -b'
 alias cl='git clean -xfd'
 
 source $SDIR/git-completion.bash
