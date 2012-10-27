@@ -1,6 +1,8 @@
 # ep-engine specific
-alias a='./config/autorun.sh'
+alias a='if [ $(automake --version | grep "GNU automake" | cut -c 25-28) != "1.11" ]; then pushd /usr/local/Library/Formula; `$(brew versions automake | grep "1.11 " | sed "s/1.11 *//g")`; brew uninstall automake; brew install automake; popd; fi; ./config/autorun.sh'
+alias amc='if [ $(automake --version | grep "GNU automake" | cut -c 25-28) != "1.12" ]; then pushd /usr/local/Library/Formula; `$(brew versions automake | grep "1.12 " | sed "s/1.12 *//g")`; brew uninstall automake; brew install automake; popd; fi; ./config/autorun.sh'
 alias r='cl; a'
+alias rmc='cl; amc'
 export MEMBASEPREFIX=/opt/membase
 alias c1='export MEMBASEPREFIX=/opt/membase'
 alias c2='export MEMBASEPREFIX=/opt/membase2'
