@@ -1,6 +1,6 @@
 # ep-engine specific
-alias je="export MEMBASELIBS='-ljemalloc -levent'; export MEMBASECONF=''"
-alias tc="export MEMBASELIBS='-ltcmalloc_minimal -levent'; export MEMBASECONF='--enable-tcmalloc'"
+alias je="export MEMBASELIBS='-ljemalloc -levent -L/opt/membase/lib'; export MEMBASECONF=''"
+alias tc="export MEMBASELIBS='-ltcmalloc_minimal -levent -L/opt/membase/lib'; export MEMBASECONF='--enable-tcmalloc'"
 alias a='if [ $(automake --version | grep "GNU automake" | cut -c 25-28) != "1.11" ]; then pushd /usr/local/Library/Formula; `$(brew versions automake | grep "1.11 " | sed "s/1.11 *//g")`; brew uninstall automake; brew install automake; popd; fi; ./config/autorun.sh'
 alias amc='if [ $(automake --version | grep "GNU automake" | cut -c 25-28) != "1.12" ]; then pushd /usr/local/Library/Formula; `$(brew versions automake | grep "1.12 " | sed "s/1.12 *//g")`; brew uninstall automake; brew install automake; popd; fi; ./config/autorun.sh'
 alias avb='./config/autorun.sh'
