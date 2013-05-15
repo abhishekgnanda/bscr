@@ -17,7 +17,7 @@ alias c='export LIBS=$MEMBASELIBS;./configure --prefix=$MEMBASEPREFIX --with-mem
 alias cmc='export LIBS="";./configure --prefix=$MEMBASEPREFIX --enable-isasl --with-libevent=/opt/membase --no-create --no-recursion'
 alias cvb='export LIBS=$MEMBASELIBS;./configure --prefix=$MEMBASEPREFIX --with-memcached=$MEMBASEPREFIX $MEMBASECONF --with-isasl --with-sasl=no'
 alias m='./config.status; make'
-alias im='./config.status; sed "s|-O3|-g|g" Makefile > M2; mv M2 Makefile; make'
+alias im='./config.status; sed "s|-O3|-ggdb3|g" Makefile > M2; mv M2 Makefile; make'
 alias mc='memcached -v -E .libs/ep.so'
 alias mc2='/opt/membase2/bin/memcached -v -E .libs/ep.so'
 alias mc3='/opt/membase3/bin/memcached -v -E .libs/ep.so'
