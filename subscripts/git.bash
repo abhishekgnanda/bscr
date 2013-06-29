@@ -15,4 +15,9 @@ get_git_branch() {
   [ -n "$br" ] && echo " ($br)"
 }
 
-export PS1='[\w$(get_git_branch)]\$ ' # TODO: Move bash specifics to general and change this to modify the existing string
+if [ -z $PRINT_HOST_NAME_IN_PROMPT ]
+then
+    export PS1='[\w$(get_git_branch)]\$ ' # TODO: Move bash specifics to general and change this to modify the existing string
+else
+    export PS1='[\u@\h \w$(get_git_branch)]\$ ' # TODO: Move bash specifics to general and change this to modify the existing string
+fi
