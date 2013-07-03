@@ -7,6 +7,7 @@ alias dh='git diff HEAD'
 alias l='git log'
 alias n='git checkout -b'
 alias cl='git clean -xfd'
+alias fe='_(){ $@; git subrepo foreach \"$@\"; }; _'
 
 source $SDIR/git-completion.bash
 
