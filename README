@@ -1,3 +1,6 @@
 Simply source the main.bash file from your .bashrc
 
 Use 'PRINT_HOST_NAME_IN_PROMPT=1' at the beginning of the source command to have host info printed in the prompt. Use 'START_STRING_PROMPT=<text>' to insert text in prompt.
+
+Other scripts:
+- vimrc available in otherscripts/vimrc. Source it from ~/.vimrc
