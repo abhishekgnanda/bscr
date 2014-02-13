@@ -28,7 +28,8 @@ augroup END
 
 command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
                 \ | wincmd p | diffthis
-" set background=dark
+set background=dark
+highlight Normal ctermbg=Black ctermfg=White
 set ic
 set expandtab
 set fileencodings=utf-8,latin1
