@@ -8,7 +8,6 @@ alias l='git log'
 alias lg='git log --graph --decorate'
 alias n='git checkout -b'
 alias cl='git clean -xfd'
-alias fe='_(){ $@; git subrepo foreach \"$@\"; }; _'
 
 source $SDIR/git-completion.bash
 
