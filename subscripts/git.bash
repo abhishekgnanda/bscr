@@ -4,6 +4,7 @@ SDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 alias s='git status'
 alias d='git diff'
 alias dh='git diff HEAD'
+alias dn='git diff --name-only'
 alias l='git log'
 alias lg='git log --graph --decorate'
 alias n='git checkout -b'
