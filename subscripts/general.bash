@@ -9,5 +9,5 @@ complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g 
 if [ "$(uname)" == "Darwin" ]; then
     alias ls='ls -G'
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    alias ls='ls --color'
+    alias ls='ls --color=auto'
 fi
