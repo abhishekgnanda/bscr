@@ -7,6 +7,8 @@ alias dh='git diff HEAD'
 alias dn='git diff --name-only'
 alias l='git log'
 alias lg='git log --graph --decorate'
+alias gs='git show'
+alias gsf='git show --format="%P"'
 alias n='git checkout -b'
 alias cl='git clean -xfd'
 
