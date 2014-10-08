@@ -21,7 +21,7 @@ get_git_branch() {
 
 if [ -z $PRINT_HOST_NAME_IN_PROMPT ]
 then
-    export PS1='['$START_STRING_PROMPT'\w$(get_git_branch)]\$ ' # TODO: Move bash specifics to general and change this to modify the existing string
+    export PS1='[\[\033[01;36m\]'$START_STRING_PROMPT'\[\033[00m\]\w$(get_git_branch)]\$ ' # TODO: Move bash specifics to general and change this to modify the existing string
 else
-    export PS1='['$START_STRING_PROMPT'\u@\h \w$(get_git_branch)]\$ ' # TODO: Move bash specifics to general and change this to modify the existing string
+    export PS1='[\[\033[01;36m\]'$START_STRING_PROMPT'\[\033[00m\]\u@\h \w$(get_git_branch)]\$ ' # TODO: Move bash specifics to general and change this to modify the existing string
 fi
