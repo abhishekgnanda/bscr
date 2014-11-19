@@ -6,3 +6,6 @@ alias del165='ssh -i ~/.ssh/appier-user.pem appier-user@delta165.rtb.appier.net'
 alias del163='ssh -i ~/.ssh/appier-user.pem appier-user@delta163.rtb.appier.net'
 alias ut0='ssh -i ~/.ssh/appier-user.pem appier-user@us-freqcap0.rtb.appier.net'
 alias ut1='ssh -i ~/.ssh/appier-user.pem appier-user@us-freqcap1.rtb.appier.net'
+
+alias lombard='ssh -i ~/.ssh/appier-user.pem appier-user@lombard21.rtb.appier.net'
+alias testserver='ssh -i ~/.ssh/appier-user.pem appier-user@192.168.91.158'
