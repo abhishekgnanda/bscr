@@ -1,6 +1,7 @@
 alias rm='rm -i'
 alias cs='cscope -bR'
 alias strtrim='sed "s/ *$//g" | sed "s/^ *//g"'
+alias jb='python -c "import sys, json; print json.dumps(json.load(sys.stdin), sort_keys=True, indent=4)"'
 
 # ssh auto-complete with previous hosts
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
