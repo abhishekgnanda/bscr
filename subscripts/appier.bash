@@ -15,3 +15,5 @@ alias apscp='scp -i ~/.ssh/appier-user.pem'
 
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" apssh
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" -o default apscp
+
+alias decompile='python -m app.tool.run_compile -i production.ini -d'
