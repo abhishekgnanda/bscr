@@ -13,6 +13,9 @@ alias testserver='ssh -i ~/.ssh/appier-user.pem appier-user@192.168.91.158'
 alias apssh='ssh -i ~/.ssh/appier-user.pem -l appier-user'
 alias apscp='scp -i ~/.ssh/appier-user.pem'
 
+alias iptlist='sudo iptables --list; echo Look for "1-34-163-22.HINET-IP.hinet.net" or check whatsmyip.org for the office IP'
+alias iptdrop='sudo iptables -D sshguard'
+
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" apssh
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" -o default apscp
 
