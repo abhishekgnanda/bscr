@@ -6,6 +6,8 @@ alias jp='python -c "import sys, json; o = open(sys.argv[-1]); j = json.load(o);
 alias ch='git ls-files | xargs md5sum | md5sum'
 alias gcs='git config color.ui true; git config core.editor vim; git config user.name "Abhishek Nanda"'
 alias bu='pushd $_BSCR_DIR; git pull --rebase; popd; START_STRING_PROMPT=$_BSCR_SSP source $_BSCR_DIR/main.bash'
+alias g='g++ -std=c++11 -O3'
+alias gg='g++ -g'
 
 # ssh auto-complete with previous hosts
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
