@@ -21,3 +21,8 @@ complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g 
 
 alias decompile='python -m app.tool.run_compile -i production.ini -d'
 alias normalize="python -c \"import sys, hashlib; x = sys.stdin.read().strip().split(':'); print hashlib.sha1(x[1]).hexdigest() if x[0] in ['gu', 'gi', 'au', 'ii'] else x[1]\""
+
+if id -u appier-user >/dev/null 2>&1; then
+    sudo chown appier-user:admin ~/.bash_history
+    sudo chown appier-user:admin ~/.viminfo
+fi
