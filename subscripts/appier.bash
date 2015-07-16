@@ -13,6 +13,8 @@ alias testserver='ssh -i ~/.ssh/appier-user.pem appier-user@192.168.91.158'
 alias apssh='ssh -i ~/.ssh/appier-user.pem -l appier-user -o "StrictHostKeyChecking no"'
 alias apscp='scp -i ~/.ssh/appier-user.pem -o "StrictHostKeyChecking no"'
 
+alias appier-user='sudo su - appier-user'
+
 alias iptlist='sudo iptables --list; echo Look for "1-34-163-22.HINET-IP.hinet.net" or check whatsmyip.org for the office IP'
 alias iptdrop='sudo iptables -D sshguard'
 
