@@ -11,6 +11,7 @@ alias lo='git log --pretty=oneline'
 alias lg='git log --graph --decorate'
 alias gs='git show'
 alias gsf='git show --format="%P"'
+alias gsn='git show --name-only'
 alias n='git checkout -b'
 alias cl='git clean -xfd'
 
