@@ -12,7 +12,6 @@ alias testserver='ssh -i ~/.ssh/appier-user.pem appier-user@192.168.91.158'
 
 alias apssh='ssh -i ~/.ssh/appier-user.pem -l appier-user -o "StrictHostKeyChecking no"'
 alias apscp='scp -i ~/.ssh/appier-user.pem -o "StrictHostKeyChecking no"'
-alias crssh='ssh -i ~/abhishek/bscr/sshkey/appier-user.end.pem -l appier-user -o "StrictHostKeyChecking no"'
 
 alias appier-user='sudo su - appier-user'
 
@@ -21,7 +20,6 @@ alias iptdrop='sudo iptables -D sshguard'
 
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" apssh
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" -o default apscp
-complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" crssh
 
 alias decompile='python -m app.tool.run_compile -i production.ini -d'
 alias normalize="python -c \"import sys, hashlib; x = sys.stdin.read().strip().split(':'); print hashlib.sha1(x[1]).hexdigest() if x[0] in ['gu', 'gi', 'au', 'ii'] else x[1]\""
