@@ -1,3 +1,4 @@
+alias sl='ls --color=auto'
 alias rm='rm -i'
 alias cs='cscope -bR'
 alias strtrim='sed "s/ *$//g" | sed "s/^ *//g"'
