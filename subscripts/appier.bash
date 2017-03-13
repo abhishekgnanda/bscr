@@ -11,7 +11,9 @@ alias lombard21='ssh -i ~/.ssh/appier-user.pem appier-user@lombard21.rtb.appier.
 alias testserver='ssh -i ~/.ssh/appier-user.pem appier-user@192.168.91.158'
 
 alias apssh='ssh -i ~/.ssh/appier-user.pem -l appier-user -o "StrictHostKeyChecking no"'
+alias avssh='ssh -i ~/.ssh/appier-vm.pem -l appier-user -o "StrictHostKeyChecking no"'
 alias apscp='scp -i ~/.ssh/appier-user.pem -o "StrictHostKeyChecking no"'
+alias avscp='scp -i ~/.ssh/appier-vm.pem -o "StrictHostKeyChecking no"'
 
 alias sparkssh='ssh -i ~/.ssh/spark6-user.pem -l root -o "StrictHostKeyChecking no"'
 alias sparkscp='scp -i ~/.ssh/spark6-user.pem -o "StrictHostKeyChecking no"'
