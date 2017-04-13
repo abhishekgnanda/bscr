@@ -10,8 +10,9 @@ alias gcs='git config color.ui true; git config core.editor vim; git config user
 alias bu='pushd $_BSCR_DIR; git pull --rebase; popd; START_STRING_PROMPT=$_BSCR_SSP source $_BSCR_DIR/main.bash'
 alias g='g++ -std=c++11 -O3'
 alias gg='g++ -g'
-alias sps='sudo ps -ef | grep '
+alias sps='sudo ps -ef | grep'
 alias top='sudo top'
+alias jctl='sudo journalctl -u'
 
 # ssh auto-complete with previous hosts
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
