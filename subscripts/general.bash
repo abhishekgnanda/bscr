@@ -23,3 +23,5 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     alias ls='ls --color=auto'
 fi
+
+export ANSIBLE_HOST_KEY_CHECKING=False
