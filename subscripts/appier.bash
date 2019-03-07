@@ -1,11 +1,13 @@
 # appier specific
 alias activate='. __/bin/activate'
 
-alias apssh='ssh -A -i ~/.ssh/abhishek_bidding_team -l appier-user -o "StrictHostKeyChecking no"'
+alias apssh='ssh -A -i ~/.ssh/appier-user.pem -l appier-user -o "StrictHostKeyChecking no"'
+alias myssh='ssh -A -i ~/.ssh/abhishek_bidding_team -o "StrictHostKeyChecking no"'
 alias avssh='ssh -A -i ~/.ssh/appier-vm.pem -l appier-user -o "StrictHostKeyChecking no"'
 alias ayssh='ssh -A -i ~/.ssh/projecty.pem -l appier-user -o "StrictHostKeyChecking no"'
 alias aassh='ssh -A -i ~/.ssh/ai.pem -l appier-user -o "StrictHostKeyChecking no"'
-alias apscp='scp -i ~/.ssh/abhishek_bidding_team -o "StrictHostKeyChecking no"'
+alias apscp='scp -i ~/.ssh/appier-user.pem -o "StrictHostKeyChecking no"'
+alias myscp='scp -i ~/.ssh/abhishek_bidding_team -o "StrictHostKeyChecking no"'
 alias avscp='scp -i ~/.ssh/appier-vm.pem -o "StrictHostKeyChecking no"'
 alias ayscp='scp -i ~/.ssh/projecty.pem -o "StrictHostKeyChecking no"'
 alias aascp='scp -i ~/.ssh/ai.pem -o "StrictHostKeyChecking no"'
