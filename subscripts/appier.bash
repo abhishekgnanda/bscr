@@ -6,6 +6,8 @@ alias avssh='ssh -A -i ~/.ssh/appier-vm.pem -l appier-user -o "StrictHostKeyChec
 alias ayssh='ssh -A -i ~/.ssh/projecty.pem -l appier-user -o "StrictHostKeyChecking no"'
 alias aassh='ssh -A -i ~/.ssh/ai.pem -l appier-user -o "StrictHostKeyChecking no"'
 alias scp='scp -o "StrictHostKeyChecking no"'
+alias ssr='sudo su - root'
+alias ssa='sudo su - appier-user'
 
 alias sparkssh='ssh -i ~/.ssh/spark6-user.pem -l root -o "StrictHostKeyChecking no"'
 
