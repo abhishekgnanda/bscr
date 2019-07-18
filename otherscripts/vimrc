@@ -42,5 +42,6 @@ set smarttab
 set tabstop=4
 set softtabstop=4
 set showcmd
+set nofixendofline
 
 " vim: set ft=vim :
