@@ -15,7 +15,7 @@ alias gsn='git show --name-only'
 alias n='git checkout -b'
 alias cl='git clean -xfd'
 
-source $SDIR/git-completion.bash
+source /usr/local/etc/bash_completion.d/git-completion.bash # brew install git bash-completion
 
 get_git_branch() {
   local br=$(git branch 2> /dev/null | grep "*" | sed 's/* //g')
