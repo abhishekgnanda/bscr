@@ -44,4 +44,6 @@ set softtabstop=4
 set showcmd
 set nofixendofline
 
+autocmd FileType go set noexpandtab
+
 " vim: set ft=vim :
