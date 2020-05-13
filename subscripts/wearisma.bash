@@ -1,5 +1,5 @@
 alias wi='. $_BSCR_DIR/otherscripts/wearisma_init.sh'
 alias wm='make server'
 alias wj='make js-watch'
-alias wa='sass-watch'
+alias wa='make sass-watch'
 alias rspec_es='elasticsearch -E http.port=9250 -E transport.tcp.port=9351 -E path.data=/tmp/es'
