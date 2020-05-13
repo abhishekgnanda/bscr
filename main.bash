@@ -9,5 +9,6 @@ export HISTFILESIZE=10000000
 
 source $DIR/subscripts/general.bash
 source $DIR/subscripts/git.bash
+source $DIR/subscripts/wearisma.bash
 
 export VIMINIT='so '$DIR'/otherscripts/vimrc'
