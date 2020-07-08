@@ -11,7 +11,7 @@ alias la='git log --graph --all'
 alias gs='git show'
 alias gsf='git show --format="%P"'
 alias gsn='git show --name-only'
-alias n='git checkout -b'
+alias n='git switch -c'
 alias cl='git clean -xfd'
 
 source /usr/local/etc/bash_completion.d/git-completion.bash # brew install git bash-completion
