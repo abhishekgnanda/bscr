@@ -1,3 +1,7 @@
+alias wd='git diff -- ":(exclude)public/"'
+alias wdh='git diff HEAD -- ":(exclude)public/"'
+alias wds='git diff --staged -- ":(exclude)public/"'
+alias wgs='git show -- ":(exclude)public/"'
 alias wi='. $_BSCR_DIR/otherscripts/wearisma_init.sh'
 alias wm='make server'
 alias wa='env $(bin/env) bin/console'
