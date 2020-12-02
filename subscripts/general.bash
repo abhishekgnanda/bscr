@@ -10,6 +10,7 @@ alias gg='g++ -std=c++11 -g'
 alias sps='sudo ps -ef | grep'
 alias top='sudo top'
 alias jctl='sudo journalctl -u'
+alias j='jq -C | less -r'
 
 # ssh auto-complete with previous hosts
 complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
