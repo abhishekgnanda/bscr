@@ -3,6 +3,7 @@
     "auto_match_enabled": false,
     "ensure_newline_at_eof_on_save": true,
     "font_size": 12,
+    "scroll_past_end": true,
     "show_full_path": true,
     "tab_size": 4,
     "translate_tabs_to_spaces": true,
